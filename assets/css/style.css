@@ -1,63 +1,108 @@
 :root {
- --text-color: white ;
- --header-color: rgb(208, 7, 248);
-
+ --text-color: white;
+ --header-color: rgb(245, 10, 210);
 }
-
-
-
 
 body {
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-  background-color:rgb(34, 32, 32);
+  background-color: rgb(34, 32, 32);
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-header{
-  text-align: center;
-}
-
-h1{
+main header {
   color: var(--header-color);
   text-align: center;
+  font-size: 40px;
+  border-style: solid;
+  border-color: white;
+  
+}
 
+
+h1 {
+  color: var(--header-color);
+  text-align: center;
+  font-size: 350%;
 }
 
 h2{
-  color: var(--header-color);
+  color: var(--text-color);
+}
+
+header p {
+  color: var(--text-color);
   text-align: center;
-
 }
 
-h3{
+main p {
   color: var(--text-color);
 }
 
-p{
-  color: var(--text-color);
-}
 
-pre{
+pre {
   color: var(--text-color);
-  border-style:solid;
+  border-style: solid;
   margin: 20px;
   padding: 10px;
-  border-radius: 8px 8px 8px 8px 
+  border-radius: 8px 8px 8px 8px;
+  background-color: var(--header-color);
 }
 
-.card{
+.card {
   border-style: dashed;
   padding: 10px;
-  flex: 0 0 300px;
+  flex: 0 0 33.33%;
   margin: 20px;
   border-width: 3px;
   border-color: white;
 }
+
+.example-icon {
+  color: white;
+  border-style: solid;
+  padding: 20px;
+  margin: 5px;
+  background-color: rgb(21, 9, 241);
+}
+
+
+.example-flex-row {
+  border-style: solid;
+  border-color: white;
+  background-color: var(--header-color);
+  border-radius: 8px 8px 8px 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+ .example-flex-column{
+  border-style: solid;
+  border-color: white;
+  background-color: var(--header-color);
+  border-radius: 8px 8px 8px 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+ }
+
+
+ .example-grid-container{
+  border-style: solid;
+  border-color: white;
+  background-color: var(--header-color);
+  border-radius: 8px 8px 8px 8px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+
+
+ }
+
