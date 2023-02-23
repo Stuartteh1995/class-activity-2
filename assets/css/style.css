@@ -1,0 +1,63 @@
+:root {
+ --text-color: white ;
+ --header-color: rgb(208, 7, 248);
+
+}
+
+
+
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color:rgb(34, 32, 32);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  color: var(--header-color);
+  text-align: center;
+
+}
+
+h2{
+  color: var(--header-color);
+  text-align: center;
+
+}
+
+h3{
+  color: var(--text-color);
+}
+
+p{
+  color: var(--text-color);
+}
+
+pre{
+  color: var(--text-color);
+  border-style:solid;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px 8px 8px 8px 
+}
+
+.card{
+  border-style: dashed;
+  padding: 10px;
+  flex: 0 0 300px;
+  margin: 20px;
+  border-width: 3px;
+  border-color: white;
+}
