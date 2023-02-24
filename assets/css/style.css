@@ -69,6 +69,8 @@ pre {
   padding: 20px;
   margin: 5px;
   background-color: rgb(21, 9, 241);
+  width: 20px;
+  height: 20px;
 }
 
 
@@ -81,7 +83,7 @@ pre {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-}
+} 
  .example-flex-column{
   border-style: solid;
   border-color: white;
@@ -106,3 +108,78 @@ pre {
 
  }
 
+
+
+.example-gradients {
+  border-style: solid;
+  width: 100%;
+  height: 35%;
+  background-image: linear-gradient(
+                rgba(232, 102, 236, 0.3) 0%,
+                rgba(232, 102, 236, 0.6) 100%
+            );
+}
+
+
+.example-box-glow{
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  border-radius: 8px 8px 8px 8px;
+  height: 40%;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+            transition: all 0.5s ease-in-out;
+        }
+
+
+.example-box-glow:hover{
+            box-shadow: inset 0px 0px 8px
+            rgba(232, 102, 236, 1), 0 0 15px
+            rgba(232, 102, 236, 1);
+        }
+
+
+
+.photo{
+  width: 100%;
+  height: 70%;
+ 
+}
+
+.exmaple-card-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: .5s ease;
+  background-color: #393839;
+  display:none;
+}
+
+
+
+.example-card-text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.exmaple-card-overlay:hover{
+  opacity: 1;
+  display:block
+}
